@@ -1,0 +1,112 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%% Copyright 2010-2011 Mark Liu (markwayneliu@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\usepackage{verbatim}
+
+% moderncv themes
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\setlength{\hintscolumnwidth}{3.1cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+
+% personal data
+\firstname{Johanna}
+\familyname{Hansen}
+\address{10 Bell Tower Lane}{Woods Hole, MA 02543}    % optional, remove the line if not wanted
+\mobile{979.240.4446}                    % optional, remove the line if not wanted
+\email{jhansen@whoi.edu}                      % optional, remove the line if not wanted
+%\extrainfo{\url{http://markliu.me}} % optional, remove the line if not wanted
+
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Technical Qualifications Summary}
+\cvline{}{Embedded Systems, Signal Processing, Hardware/Software Integration, 
+Python, Numpy, Matlab, C, DMM, Scopes, Matlab, C++, QT, \LaTeX{}, GIS, Telecommunications Infrastructure}
+
+\section{Education}
+\cventry{2012--2015}{MS, Electrical Engineering}{University of Texas, San Antonio}{San Antonio, TX}{}{}
+\cvline{Concentration}{\small Digital Signal Processing}
+\cvline{Coursework}{\small Digital Signal Processing, Digital Filters, Graph Theory, 
+Fundamentals of Machine Learning, Remote Sensing}
+\cventry{2007--2011}{BS, Electrical Engineering}{Texas State University}{San Marcos, TX}{}{}
+\cvline{Concentration}{\small Communications and Networking}
+\cvline{Coursework}{\small Networking, Data Compression and Error Coding, 
+    Wireless Communications, Communication Theory, 
+Microprocessors, Digital Design, Electronics I/II, Digital Signal Processing, 
+Circuit Analysis, Electromagnetics, Systems and Signals}
+\cventry{2007--2011}{BS, Geography}{Texas State University}{San Marcos, TX}{}{}
+\cvline{Concentration}{\small Resource and Environmental Science}
+\cvline{Coursework}{\small GIS, Water Resources, Earth Science, Physical Geography, Quantitative Data Analysis}
+\section{Professional Development}
+\cvline{Courses}{Technical Writing, Project Management, Proposal Writing,Promoting to Research and Development, Technical Presentations, Geophysics to Detect Solutional Features}
+\cvline{Conferences}{2013 SciPY - Conference and Tutorials, Machine Learning and Geospatial Track, 2013 PyTexas}
+\cvline{Presentations}{Dynamics Estimation for AUVs in the Absense of DVL Bottom-lock using ADCP Aided State Estimation - Lash Medagoda, 2014 WHOI Technical Employee Presentations}
+
+
+\section{Experience}
+
+\cventry{Jan 2014--Present}{Engineer II}{Woods Hole Oceanographic Institution}{Woods Hole, MA}{}{
+Hired interns and developers, helped set the path for most parts of the business, helped set the technical roadmap, worked on launching new products, managed existing products, and contributed to the primary existing code base which is in Rails.
+}
+
+\cventry{Jan 2011--Dec 2013}{Engineer}{Southwest Research Institute (SwRI)}{San Antonio, TX}{}{
+    Primary developer and system integrator on project to build remote sensor that utilized ultrasonic
+    transducers and video the map culverts for the FHWA. 
+    /
+}
+
+\cventry{Jan 2011--Dec 2012}{Telecom Engineering Coop}{Lower Colorado River Authority (LCRA)}{Austin, TX}{}{
+Founded Upkeep Charlie (\url{http://upkeepcharlie.com}) with Stefan Hahn and Peter Barth, the managing director of The Iron Yard.
+Our company offers handyman services, lawn care services, and cleaning services to homeowners.
+Jobs can be booked online and our custom built backend scheduling system automates a good amount of the work required in scheduling and managing accounts. 
+This backend is built in Python/Django, and integrates with payments (Stripe), email (IMAP/Gmail), text/phone/voicemail (Twilio), and chat (Olark).
+}
+
+\section{Publications}
+\cventry{2014}{Transportation Research Board 93rd Annual Meeting}{The Ultrasonic Culvert Inspection System (UCIS): A Low-Cost Device for Conduit Inspection}{Hansen, Johanna, Wilden, Gegory, Abbott, Ben, Green, Ronald}{}{}
+
+\section{Oceanographic Research Cruises}
+\cventry{2014-FSM}{}{}{}{}{}
+\cvline{2014-Cordes}{}{}{}{}{}
+\cvline{2014-Glazer}{}{}{}{}{}
+\cvline{2014-Kinsey}{}{}{}{}{}
+
+
+
+
+\section{Organizations}
+\cvline{IEEE}{Signal Processing, Geoscience and Remote Sensing, Ocean Memberships}
+\cvline{}{Cape Cod Young Professionals Member}
+\cvline{}{2013 South-Central CleanTech Open Judge, Austin TX}
+
+\section{Activities}
+\cvline{Gardening}{WHOI Gardener, SwRI Gardening Club - Founding Member and Club Secretary}
+\cvline{SCUBA}{NAUI Master Scuba Diver, Diving for Sciece Certified}
+\cvline{Other Hobbies}{Hiking, Backpacking, Traveling, Equestrian Sports, Paddleboarding, Kayaking}
+
+\end{document}
