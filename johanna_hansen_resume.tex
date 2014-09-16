@@ -19,7 +19,7 @@
 
 % adjust the page margins
 \usepackage[scale=0.8]{geometry}
-\setlength{\hintscolumnwidth}{3.1cm}						% if you want to change the width of the column with the dates
+\setlength{\hintscolumnwidth}{3.2cm}						% if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 %\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
 
@@ -45,8 +45,9 @@
 \maketitle
 
 \section{Technical Qualifications Summary}
-\cvline{}{Embedded Systems, Signal Processing, Hardware/Software Integration, 
-Python, Numpy, Matlab, C, DMM, Scopes, Matlab, C++, QT, \LaTeX{}, GIS, Telecommunications Infrastructure}
+\cvline{}{Digital Signal Processing, Hardware/Software Integration, Embedded Systems,
+Python, Numpy, Matlab, C, DMM, Scopes, Matlab, C++, QT, 
+\LaTeX{}, GIS, Telecommunications Infrastructure, Computer Networking}
 
 \section{Education}
 \cventry{2012--2015}{MS, Electrical Engineering}{University of Texas, San Antonio}{San Antonio, TX}{}{}
@@ -58,56 +59,87 @@ Fundamentals of Machine Learning, Remote Sensing}
 \cvline{Coursework}{\small Networking, Data Compression and Error Coding, 
     Wireless Communications, Communication Theory, 
 Microprocessors, Digital Design, Electronics I/II, Digital Signal Processing, 
-Circuit Analysis, Electromagnetics, Systems and Signals}
+Circuit Analysis, Electromagnetism, Systems and Signals}
 \cventry{2007--2011}{BS, Geography}{Texas State University}{San Marcos, TX}{}{}
 \cvline{Concentration}{\small Resource and Environmental Science}
 \cvline{Coursework}{\small GIS, Water Resources, Earth Science, Physical Geography, Quantitative Data Analysis}
 \section{Professional Development}
 \cvline{Courses}{Technical Writing, Project Management, Proposal Writing,Promoting to Research and Development, Technical Presentations, Geophysics to Detect Solutional Features}
 \cvline{Conferences}{2013 SciPY - Conference and Tutorials, Machine Learning and Geospatial Track, 2013 PyTexas}
-\cvline{Presentations}{Dynamics Estimation for AUVs in the Absense of DVL Bottom-lock using ADCP Aided State Estimation - Lash Medagoda, 2014 WHOI Technical Employee Presentations}
+\cvline{Presentations}{Dynamics Estimation for AUVs in the Absence of DVL Bottom-lock using ADCP Aided State Estimation - Lash Medagoda, 2014 WHOI Technical Employee Presentations}
 
 
 \section{Experience}
 
-\cventry{Jan 2014--Present}{Engineer II}{Woods Hole Oceanographic Institution}{Woods Hole, MA}{}{
-Hired interns and developers, helped set the path for most parts of the business, helped set the technical roadmap, worked on launching new products, managed existing products, and contributed to the primary existing code base which is in Rails.
+\cventry{Jan 2014--Present}{Engineer II}{Woods Hole Oceanographic Institution}{Woods Hole, MA}{}
+{
+Electrical/Software Systems Engineer for the Sentry AUV team in the Applied Ocean Physics 
+and Engineering Department. Worked as part of the operations team to Write, modify, 
+and debug data processing, vehicle control, and device driver software in python, 
+Matlab, C, C++, and BASH both in the lab and at sea.
+    \begin{itemize}
+        \item Assist in maintaining data storage, processing, and network architecture
+        \item Process geophysical, acoustic, navigation, and photo data
+        \item Assist in all aspects of at-sea operations
+        \item Develop documentation for both internal and external use
+    \end{itemize}
 }
 
-\cventry{Jan 2011--Dec 2013}{Engineer}{Southwest Research Institute (SwRI)}{San Antonio, TX}{
+\cventry{Jan 2012-Jan 2014}{Engineer}{Southwest Research Institute (SwRI)}{San Antonio, TX}{}
+{
     Primary developer and system integrator on project to build remote sensor that utilized ultrasonic
-transducers and video the map culverts for the FHWA} 
-    { \begin{itemize}
+transducers and video the map culverts for the FHWA. 
+     \begin{itemize}
         \item Built sensor consisting of 40 kHz transducers, DSP board, camera, IMU, and Gumstix Computer with a custom Angstrom Linux Distribution. 
         \item Sampled, filtered, and normalized incoming acoustic data in C on a 
-            PIC microcontroller.
+            PIC micro-controller.
         \item Developed wxpython graphical user interface in Windows for wireless control, 
-            status updates, and data transmittion from sensor. 
+            status updates, and data transmission from sensor. 
         \item Principal Investigator for Internal Research Project to implement intelligent propulsion
             system using low-cost acoustic sensing. 
     \end{itemize}
     }
 
-\cventry{Jan 2011--Dec 2012}{Telecom Engineering Coop}{Lower Colorado River Authority (LCRA)}{Austin, TX}{Year-long coop student for the telecommunications department of a quasi-government while 
-maintaining status as a full-time, undergraduate student}
-{ \begin{itemize}
-        \item Designed and configured SONET, optical fiber, ethernet, and microwave systems
+    \cventry{Jan 2011--Dec 2011}{Engineering Coop}{Lower Colorado River Authority (LCRA)}{Austin, TX}{}
+    {Year-long coop student for the telecommunications department while 
+maintaining status as a full-time, undergraduate student.
+ \begin{itemize}
+        \item Designed and configured SONET, optical fiber, Ethernet, and microwave systems
             critical communication infrastructure including power generation/distribution, dam and 
             irrigation control, and emergency response coordination. 
         \item Project lead for pilot irrigation control system using networked
-            900 Mhz Radios. 
+            900 MHz Radios. 
         \item Assessed fiber installations using OTDR for future expansion planning.
     \end{itemize}
 }
 
+\cventry{Jan 2010--Dec 2010}{Teaching/Lab Assistant}{Texas State University}{San Marcos, TX}{}
+{Assisted with Signals and Systems, Electronics, Microprocessors, and 
+Engineering Management Courses and labs as an undergraduate}
+
+\cventry{Aug 2008--Aug 2010}{Technical Support}{AirGenerate}{Houston, TX}{}
+{Provided Remote Technical Support via email and phone for Heat-Pump Hot Water Heater Start-up Company}
+
 \section{Publications}
-\cventry{2014}{Transportation Research Board 93rd Annual Meeting}{The Ultrasonic Culvert Inspection System (UCIS): A Low-Cost Device for Conduit Inspection}{Hansen, Johanna, Wilden, Gegory, Abbott, Ben, Green, Ronald}{}{}
+\cventry{2014}{Transportation Research Board 93rd Annual Meeting}{The Ultrasonic Culvert Inspection System (UCIS): A Low-Cost Device for Conduit Inspection}{Hansen, Johanna, Wilden, Gregory, Abbott, Ben, Green, Ronald}{}{}
 
 \section{Oceanographic Research Cruises}
-\cventry{2014-FSM}{}{}{}{}{}
-\cvline{2014-Cordes}{}{}{}{}{}
-\cvline{2014-Glazer}{}{}{}{}{}
-\cvline{2014-Kinsey}{}{}{}{}{}
+\cvline{2014-FSM}{Utilized first research cruise to develop system understanding. Began work on
+Reson Multibeam Driver. Initiated work to improve data management practices. Successfully
+conducted pre/post dives.}
+\cvline{2014-Cordes}{Worked as primary software team member for pre/post dive. Deployed new Reson 
+Driver for automated control of the multibeam sonar. Implemented multi-threaded
+photo processing pipeline so that photos could be produced within minutes rather than hours. 
+Produced several scripts to ease pre-dive tasks.
+Performed data management tasks and interacted with science and documentary team.}
+\cvline{2014-Glazer}{Worked as primary software team member in tandem with electrical and
+mechanical teams to troubleshoot many hardware failures. Worked closely with EL and 
+Chief Scientist to provide valuable data processing for science.}
+\cvline{2014-Kinsey}{Served as Sentry software contact for Optical Communication
+System integration for two successful dives. Developed acoustic and optical geolocation
+capability with guidance of EL and graduate student. Troubleshot DVL, Avtrak, Optode
+installations and produced technical reports. Provided training for new staff in pre/post
+dive process.}
 
 
 
@@ -119,7 +151,7 @@ maintaining status as a full-time, undergraduate student}
 
 \section{Activities}
 \cvline{Gardening}{WHOI Gardener, SwRI Gardening Club - Founding Member and Club Secretary}
-\cvline{SCUBA}{NAUI Master Scuba Diver, Diving for Sciece Certified}
+\cvline{SCUBA}{NAUI Master Scuba Diver, Diving for Science Certified}
 \cvline{Other Hobbies}{Hiking, Backpacking, Traveling, Equestrian Sports, Paddleboarding, Kayaking}
 
 \end{document}
