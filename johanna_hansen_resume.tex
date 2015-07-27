@@ -7,9 +7,11 @@
 % available at http://www.latex-project.org/lppl/.
 
 \documentclass[11pt,a4paper,sans]{moderncv}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 
 \usepackage{verbatim}
-
+%\usepackage{casual}
 % moderncv themes
 \moderncvstyle{classic}
 \moderncvcolor{blue}
@@ -20,80 +22,80 @@
 % adjust the page margins
 \usepackage[scale=0.8]{geometry}
 \setlength{\hintscolumnwidth}{3.2cm}% if you want to change the width of the column with the dates
-
-% personal data
+%
+%% personal data
 \firstname{Johanna}
 \familyname{Hansen}
 \address{10 Bell Tower Lane}{Woods Hole, MA 02543}    % optional, remove the line if not wanted
 \mobile{979.240.4446}                    % optional, remove the line if not wanted
-\email{jhansen@whoi.edu}                      % optional, remove the line if not wanted
 
+
+\extrainfo{jh1736@gmail.com}                      % optional, remove the line if not wanted
+%\website{johannah.github.io}
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
 \maketitle
-
-\section{Technical Qualifications Summary}
-\cvline{}{Digital Signal Processing, Hardware/Software Integration, 
-    Embedded Systems, Python, Numpy, Matlab, C, DMM, Scopes, Matlab, C++, QT, 
-    \LaTeX{}, GIS, Telecommunications Infrastructure, Computer Networking}
+%
+\section{Technical Interests} 
+\cvline{}{Scientific Computing, 
+          Data Science, 
+          DSP, 
+          Embedded Systems, 
+          GIS}
 
 \section{Education}
-\cventry{2012--2015}{MS, Electrical Engineering}
+\cventry{2012--2016}{MS, Electrical Engineering}
         {University of Texas, San Antonio}{San Antonio, TX}{}{}
 \cvline{Concentration}{\small Digital Signal Processing}
-\cvline{Coursework}{\small Digital Filters, Graph Theory, 
-        Fundamentals of Machine Learning, Remote Sensing, Wavelets, 
-        Digital Signal Processing}
+%\cvline{Coursework}{\small Image Processing, Digital Filters, Graph Theory, 
+%        Machine Learning, Remote Sensing, 
+%        DSP}
 \cventry{2007--2011}{BS, Electrical Engineering}{Texas State University}{San Marcos, TX}{}{}
 \cvline{Concentration}{\small Communications and Networking}
-\cvline{Coursework}{\small Networking, Data Compression and Error Coding, 
-        Wireless Communications, Communication Theory, 
-        Microprocessors, Digital Design, Electronics I/II, Digital Signal Processing, 
-        Circuit Analysis, Electromagnetism, Systems and Signals}
+%\cvline{Coursework}{\small Data Compression and Error Coding, 
+%        Communication Theory, 
+%        Microprocessors}
 \cventry{2007--2011}{BS, Geography}{Texas State University}{San Marcos, TX}{}{}
 \cvline{Concentration}{\small Resource and Environmental Science}
-\cvline{Coursework}{\small GIS, Water Resources, Earth Science, 
-        Physical Geography, Quantitative Data Analysis}
+%\cvline{Coursework}{\small GIS, 
+%    Quantitative Data Analysis, 
+%    Physical Geography, 
+%    Quantitative Data Analysis}
 
 \section{Experience}
 
 \cventry{Jan 2014--Present}{Engineer II}{Woods Hole Oceanographic Institution}{Woods Hole, MA}{}
 {
-Electrical/Software Systems Engineer for the Sentry AUV team in the Applied Ocean Physics 
-and Engineering Department. Worked as part of the operations team to Write, modify, 
-and debug data processing, vehicle control, and device driver software in Python, 
-Matlab, C, C++, and BASH both in the lab and at sea.
+Data/Software/Electrical Engineer for autonomous underwater robotic vehicles working in research and ship-board operational environments.
     \begin{itemize}
-        \item Assist in maintaining data storage, processing, and network architecture
-        \item Process geophysical, acoustic, navigation, and photo data
-        \item Assist in all aspects of at-sea operations
-        \item Develop documentation for both internal and external use
+        \item Primary data-scientist at sea for geophysical, acoustic, navigation, and photo data
+        %\item Primary data management and network architecture engineer
+        \item Assist in all aspects of at-sea operations, including deployments, repair, and planning 
+      %  \item Overhauled both internal and external documentation procedures with version control and wiki access
+        \item Developed automated processing pipeline for multibeam, sidescan sonar, and optical data
+        \item Assisted in overhaul of navigation (GPS/USBL/LBL) processing and visualization 
+        \item Scientific Python/Matlab, C++/C, QT, MB-System, and device drivers
     \end{itemize}
 }
 
 \cventry{Jan 2012-Jan 2014}{Engineer}{Southwest Research Institute (SwRI)}{San Antonio, TX}{}
 {
-    Primary developer and system integrator on project to build remote sensor that utilized ultrasonic
-transducers and video the map culverts for the FHWA. 
+Software/Electral Applied Research Engineer for external clients.  
      \begin{itemize}
-        \item Built sensor consisting of 40 kHz transducers, DSP board, 
-            camera, IMU, and Gumstix Computer with a custom Angstrom Linux Distribution. 
-        \item Sampled, filtered, and normalized incoming acoustic data in C on a 
-            PIC micro-controller.
-        \item Developed wxpython graphical user interface in Windows for wireless control, 
-            status updates, and data transmission from sensor. 
-        \item Principal Investigator for Internal Research Project to 
-            implement intelligent propulsion
-            system using low-cost acoustic sensing. 
+        \item Developed mapping sensor consisting of transducers, DSP, 
+            camera, IMU, and embedded computer 
+        \item Developed sampling, filtering, visualization scheme for live acoustic data 
+        \item Won internal research funding as Primary Investigator to 
+            implement a low-cost, acoustic sensor capable of intelligent search 
     \end{itemize}
     }
 
     \cventry{Jan 2011--Dec 2011}{Engineering Coop}
             {Lower Colorado River Authority (LCRA)}{Austin, TX}{}
-            {Year-long coop student for the telecommunications department 
-            while maintaining status as a full-time, undergraduate student.
+            {Engineering Coop for the telecommunications department 
+            as full-time student.
  \begin{itemize}
         \item Designed and configured SONET, optical fiber, Ethernet, and microwave systems
             critical communication infrastructure including power generation/distribution, dam and 
@@ -108,57 +110,55 @@ transducers and video the map culverts for the FHWA.
 {Assisted with Signals and Systems, Electronics, Microprocessors, and 
 Engineering Management Courses and labs as an undergraduate}
 
-\cventry{Aug 2008--Aug 2010}{Technical Support}{AirGenerate}{Houston, TX}{}
-{Provided Remote Technical Support via email and phone for Heat-Pump Hot Water Heater Start-up Company}
-
 
 \section{Professional Development}
 \cvline{Courses}{Technical Writing, Project Management, 
         Proposal Writing,Promoting to Research and Development}
-\cvline{Conferences}{2013 SciPY - Conference and Tutorials, 
-        Machine Learning and Geospatial Track, 2013 PyTexas}
-\cvline{Presentations}{Dynamics Estimation for AUVs in the Absence of DVL
-        Bottom-lock using ADCP Aided State Estimation, 
-        2014 WHOI Technical Employee Presentations, 
-        Using Geophsycis to Detect Solutional Features}
+\cvline{Conferences}{2013 \& 2015 SciPy - Machine Learning, Geospatial, and Computational Statistics Tracks}
 
 \section{Publications}
+\cventry{2015}{IEEE Oceans 2015}{Autonomous Acoustic-Aided Optical Localization for Data Transfer}{Johanna Hansen, Dehann Fourie, James C. Kinsey, Clifford Pontbriand, Jon Ware, Norm Farr, Carl L. Kaiser, and Maurice Tivey}{}{}
 \cventry{2014}{Transportation Research Board 93rd Annual Meeting}
         {The Ultrasonic Culvert Inspection System (UCIS): 
-        A Low-Cost Device for Conduit Inspection}
-        {Hansen, Johanna, Wilden, Gregory, Abbott, Ben, Green, Ronald}{}{}
+        A Low-Cost Device for Conduit Inspection}{}{}{}{}{}
+        {Johanna Hansen, Gregory Wilden, Ben Abbott, Ronald Green}{}{}{}
 
-\section{Oceanographic Research Cruises}
-\cvline{2014-FSM}{Utilized first research cruise to develop system understanding. 
-        Began work on Reson Multibeam Driver. Initiated work to improve data 
-        management practices. Successfully conducted pre/post dives.}
-\cvline{2014-Cordes}{Worked as primary software team member for pre/post dive. 
-        Deployed new Reson Driver for automated control of the multibeam sonar. 
-        Implemented multi-threaded photo processing pipeline so that photos 
-        could be produced within minutes rather than hours. Produced several 
-        scripts to ease pre-dive tasks. Performed data management tasks and 
-        interacted with science and documentary team.}
-\cvline{2014-Glazer}{Worked as primary software team member in tandem with 
-        electrical and mechanical teams to troubleshoot many hardware failures. 
-        Worked closely with EL and Chief Scientist to provide valuable data 
-        processing for science.}
-\cvline{2014-Kinsey}{Served as Sentry software contact for Optical Communication
-        System integration for two successful dives. Developed acoustic and 
-        optical geolocation capability with guidance of EL and graduate student. 
-        Troubleshot DVL, Avtrak, Optode installations and produced technical 
-        reports. Provided training for new staff in pre/post dive process.}
+\section{Presentations}
+\cventry{2015}{Scipy 2015}{Characterizing the Seafloor with Python as a Toolbox}{}{}{}
+\cventry{2015}{Big-data, Robotics, Autonomy, Technology and Sensing (BRATS) Talk}{Introduction to Machine Learning with Scikit-learn}{}{}{}
 
+%\section{Oceanographic Research Cruises}
+%\cvline{2014-fsm}{Utilized first research cruise to develop system understanding. 
+%        Began work on Reson Multibeam Driver. Initiated work to improve data 
+%        management practices. Successfully conducted pre/post dives.}
+%\cvline{2014-Cordes}{Worked as primary software team member for pre/post dive. 
+%        Deployed new Reson Driver for automated control of the multibeam sonar. 
+%        Implemented multi-threaded photo processing pipeline so that photos 
+%        could be produced within minutes rather than hours. Produced several 
+%        scripts to ease pre-dive tasks. Performed data management tasks and 
+%        interacted with science and documentary team.}
+%\cvline{2014-Glazer}{Worked as primary software team member in tandem with 
+%        electrical and mechanical teams to troubleshoot many hardware failures. 
+%        Worked closely with EL and Chief Scientist to provide valuable data 
+%        processing for science.}
+%\cvline{2014-Kinsey}{Served as Sentry software contact for Optical Communication
+%        System integration for two successful dives. Developed acoustic and 
+%        optical geolocation capability. 
+%        Troubleshot DVL, Avtrak, Optode installations and produced technical 
+%        reports. Provided training for new staff in pre/post dive process.}
+%\cvline{2014-Baco-Taylor}
 
 
 
 \section{Organizations}
+\cvline{WHOI}{Founder and Technical Organizer of WHOI-Software Technical Group}
+\cvline{Python}{Member of Woods Hole Python Meetup}
 \cvline{IEEE}{Signal Processing, Geoscience and Remote Sensing, Ocean Memberships}
-\cvline{CCYP}{Cape Cod Young Professionals Member}
 \cvline{CTO}{2013 South-Central CleanTech Open Incubator Judge, Austin TX}
 
 \section{Activities}
 \cvline{Gardening}{WHOI Gardener, SwRI Gardening Club - Founding Member and Club Secretary}
 \cvline{SCUBA}{NAUI Master Scuba Diver, Diving for Science Certified}
-\cvline{Other Hobbies}{Hiking, Backpacking, Traveling, Equestrian Sports, Paddleboarding, Kayaking}
-
+%\cvline{Other Hobbies}{Hiking, Backpacking, Traveling, Equestrian Sports, Paddleboarding, Kayaking}
+%
 \end{document}
