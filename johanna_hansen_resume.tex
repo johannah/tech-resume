@@ -35,6 +35,18 @@
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
+\newcommand*{\cvdegree}[7][.25em]{%
+\cvitem[#1]{\color{black}#2}{%
+{\scshape#3}%
+    \ifthenelse{\equal{#4}{}}{}{, {\itshape#4}}%
+    \ifthenelse{\equal{#5}{}}{}{, {\color{blue}#5}}%
+    \ifthenelse{\equal{#6}{}}{}{, {\sffamily#6}}%
+    .\strut%
+    \ifx&#7&%
+    \else{\newline{}\begin{minipage}[t]{\linewidth}\small% next line: customization
+                                                  \fontfamily{pzc}\selectfont% The percent signs are necessary!
+                                                        #7\end{minipage}}\fi}}
+
 \begin{document}
 \maketitle
 %
@@ -46,27 +58,27 @@
           GIS}
 
 \section{Education}
-\cventry{2012--2016}{MS, Electrical Engineering}
-        {University of Texas, San Antonio}{San Antonio, TX}{}{}
-\cvline{Concentration}{\small Digital Signal Processing}
-%\cvline{Coursework}{\small Image Processing, Digital Filters, Graph Theory, 
-%        Machine Learning, Remote Sensing, 
-%        DSP}
-\cventry{2007--2011}{BS, Electrical Engineering}{Texas State University}{San Marcos, TX}{}{}
-\cvline{Concentration}{\small Communications and Networking}
-%\cvline{Coursework}{\small Data Compression and Error Coding, 
-%        Communication Theory, 
-%        Microprocessors}
-\cventry{2007--2011}{BS, Geography}{Texas State University}{San Marcos, TX}{}{}
-\cvline{Concentration}{\small Resource and Environmental Science}
-%\cvline{Coursework}{\small GIS, 
-%    Quantitative Data Analysis, 
-%    Physical Geography, 
-%    Quantitative Data Analysis}
+\cvdegree{Aug 2012-May 2016}{University of Texas, San Antonio}{GPA: 3.81}{}{}{}
+\cventry{}{M.S., Electrical Engineering}{Digital Signal Processing}{}{}{}
+%\cvline{Concentration}{\small Digital Signal Processing}
+\cvline{}{\small Image Processing, Digital Filters, Graph Theory, 
+        Machine Learning, Remote Sensing, 
+        DSP}
+\cvdegree{Aug 2007-Dec 2011}{Texas State University}{GPA: 3.61 - Cum Laude}{}{}{}
+\cventry{}{BS, Electrical Engineering}{Communications and Networking}{}{}{}
+%\cvline{Concentration}{\small Communications and Networking}
+\cvline{}{\small Data Compression and Error Coding, 
+        Wireless Systems,
+        Microprocessors}
+\cventry{}{ B.S., Geography}{Resource and Environmental Science}{}{}{}{}
+\cvline{}{\small GIS, 
+    Quantitative Data Analysis, 
+    Physical Geography, 
+    Quantitative Data Analysis}
 
 \section{Experience}
 
-\cventry{Jan 2014--Present}{Engineer II}{Woods Hole Oceanographic Institution}{Woods Hole, MA}{}
+\cventry{Jan 2014-Present}{Engineer II}{Woods Hole Oceanographic Institution}{Woods Hole, MA}{}
 {
 Data/Software/Electrical Engineer for autonomous underwater robotic vehicles working in research and ship-board operational environments.
     \begin{itemize}
@@ -88,9 +100,10 @@ Software/Electrical Applied Research Engineer for commercial and government clie
         \item Developed sampling, filtering, visualization scheme for live acoustic data 
         \item Won internal research funding as Primary Investigator to 
             implement a low-cost, acoustic sensor capable for intelligent search 
+        \item Attained Government Security Clearance
     \end{itemize}
          }
-    \cventry{Jan 2011--Dec 2011}{Engineering Coop}
+    \cventry{Jan 2011-Dec 2011}{Engineering Coop}
             {Lower Colorado River Authority (LCRA)}{Austin, TX}{}
             {Engineering Coop for the telecommunications department 
             as full-time student.
@@ -104,26 +117,32 @@ Software/Electrical Applied Research Engineer for commercial and government clie
     \end{itemize}
 }
 
-\cventry{Jan 2010--Dec 2010}{Teaching/Lab Assistant}{Texas State University}{San Marcos, TX}{}
+\cventry{Jan 2010-Dec 2010}{Teaching/Lab Assistant}{Texas State University}{}{}
 {Assisted with Signals and Systems, Electronics, Microprocessors, and 
 Engineering Management Courses and labs as an undergraduate}
 
 
 \section{Professional Development}
 \cvline{Courses}{Technical Writing, Project Management, 
-        Proposal Writing,Promoting to Research and Development}
+        Proposal Writing, Promoting to Research and Development}
 \cvline{Conferences}{2013 \& 2015 SciPy - Scikit-learn, Pandas, Cython, Geospatial, and Computational Statistics Tracks}
+
+%\section{Qualifications}
+%\cvlistdoubleitem{Scientific Python}{Government Security Clearance}
 
 \section{Publications}
 \cventry{2015}{IEEE Oceans 2015}{Autonomous Acoustic-Aided Optical Localization for Data Transfer}{Johanna Hansen, Dehann Fourie, James C. Kinsey, Clifford Pontbriand, Jon Ware, Norm Farr, Carl L. Kaiser, and Maurice Tivey}{}{}
 \cventry{2014}{Transportation Research Board 93rd Annual Meeting}
         {The Ultrasonic Culvert Inspection System (UCIS): 
-        A Low-Cost Device for Conduit Inspection}{}{}{}{}{}
+        A Low-Cost Device for Conduit Inspection}
         {Johanna Hansen, Gregory Wilden, Ben Abbott, Ronald Green}{}{}{}
 
 \section{Presentations}
 \cventry{2015}{SciPy 2015}{Characterizing the Seafloor with Python as a Toolbox}{}{}{}
 \cventry{2015}{Big-data, Robotics, Autonomy, Technology and Sensing (BRATS) Talk}{Introduction to Machine Learning with Scikit-learn}{}{}{}
+
+%\section{Awards}
+%\cvline{May 2007-Dec 2011}{Terry Foundation Scholarship}
 
 %\section{Oceanographic Research Cruises}
 %\cvline{2014-fsm}{Utilized first research cruise to develop system understanding. 
@@ -148,15 +167,15 @@ Engineering Management Courses and labs as an undergraduate}
 
 
 
-\section{Organizations}
+\section{Affiliations}
 \cvline{WHOI}{Founder and Technical Organizer of WHOI-Software Technical Group}
 \cvline{Python}{Member of Woods Hole Python Meetup}
 \cvline{IEEE}{Signal Processing, Geoscience and Remote Sensing, Ocean Memberships}
 \cvline{CTO}{2013 South-Central CleanTech Open Incubator Judge, Austin TX}
-
-\section{Activities}
 \cvline{Gardening}{WHOI Gardener, SwRI Gardening Club - Founding Member and Club Secretary}
 \cvline{SCUBA}{NAUI Master Scuba Diver, Diving for Science Certified}
-%\cvline{Other Hobbies}{Hiking, Backpacking, Traveling, Equestrian Sports, Paddleboarding, Kayaking}
+
+\section{Interests}
+\cvline{}{Hiking, Backpacking, Traveling, Equestrian Sports, Paddleboarding }
 %
 \end{document}
