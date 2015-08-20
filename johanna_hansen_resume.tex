@@ -13,7 +13,8 @@
 \usepackage{verbatim}
 %\usepackage{casual}
 % moderncv themes
-\moderncvstyle{classic}
+%\moderncvstyle{casual}
+\moderncvstyle{casual}
 \moderncvcolor{blue}
 
 % character encoding
@@ -21,7 +22,7 @@
 
 % adjust the page margins
 \usepackage[scale=0.8]{geometry}
-\setlength{\hintscolumnwidth}{3.2cm}% if you want to change the width of the column with the dates
+\setlength{\hintscolumnwidth}{3.25cm}% if you want to change the width of the column with the dates
 %
 %% personal data
 \firstname{Johanna}
@@ -44,35 +45,35 @@
     .\strut%
     \ifx&#7&%
     \else{\newline{}\begin{minipage}[t]{\linewidth}\small% next line: customization
-                                                  \fontfamily{pzc}\selectfont% The percent signs are necessary!
+                 \fontfamily{pzc}\selectfont% The percent signs are necessary!
                                                         #7\end{minipage}}\fi}}
 
 \begin{document}
 \maketitle
 %
-\section{Technical Interests} 
+\section{Technical Qualifications Summary} 
 \cvline{}{Scientific Computing, 
-          Data Science, 
-          DSP, 
-          Embedded Systems, 
-          GIS}
+          Spatial-Temporal Signal Processing,
+          Autonomous Systems, 
+          Python, Matlab, C++/C, QT, MB-System, GIS, Linux/Windows
+       }
+%\section{Technical Skills} 
+%\cvline{}{Scientific Python, Matlab, C++/C, QT, MB-System, GIS, Linux/Windows} 
 
 \section{Education}
-\cvdegree{Aug 2012-May 2016}{University of Texas, San Antonio}{GPA: 3.81}{}{}{}
+\cvdegree{May 2012-May 2016}{University of Texas, San Antonio}{GPA: 3.81}{}{}{}
 \cventry{}{M.S., Electrical Engineering}{Digital Signal Processing}{}{}{}
-%\cvline{Concentration}{\small Digital Signal Processing}
 \cvline{}{\small Image Processing, Digital Filters, Graph Theory, 
         Machine Learning, Remote Sensing, 
-        DSP}
+        }
 \cvdegree{Aug 2007-Dec 2011}{Texas State University}{GPA: 3.61 - Cum Laude}{}{}{}
 \cventry{}{BS, Electrical Engineering}{Communications and Networking}{}{}{}
-%\cvline{Concentration}{\small Communications and Networking}
 \cvline{}{\small Data Compression and Error Coding, 
         Wireless Systems,
         Microprocessors}
 \cventry{}{ B.S., Geography}{Resource and Environmental Science}{}{}{}{}
 \cvline{}{\small GIS, 
-    Quantitative Data Analysis, 
+    Environmental Management, 
     Physical Geography, 
     Quantitative Data Analysis}
 
@@ -82,13 +83,12 @@
 {
 Data/Software/Electrical Engineer for autonomous underwater robotic vehicles working in research and ship-board operational environments.
     \begin{itemize}
-        \item Primary data-scientist at sea for geophysical, acoustic, navigation, and photo data
-        %\item Primary data management and network architecture engineer
         \item Assist in all aspects of at-sea operations, including deployments, repair, and planning 
+        \item Primary data-scientist at sea for geophysical, acoustic, and photo data processing
+        %\item Primary data management and network architecture engineer
       %  \item Overhauled both internal and external documentation procedures with version control and wiki access
         \item Developed automated processing pipeline for multibeam, sidescan sonar, and optical data
         \item Assisted in overhaul of navigation (GPS/USBL/LBL) processing and visualization 
-        \item Scientific Python/Matlab, C++/C, QT, MB-System, and device drivers
     \end{itemize}
 }
 
@@ -124,22 +124,27 @@ Engineering Management Courses and labs as an undergraduate}
 
 \section{Professional Development}
 \cvline{Courses}{Technical Writing, Project Management, 
-        Proposal Writing, Promoting to Research and Development}
+        Proposal Writing, Promoting Research and Development}
 \cvline{Conferences}{2013 \& 2015 SciPy - Scikit-learn, Pandas, Cython, Geospatial, and Computational Statistics Tracks}
 
 %\section{Qualifications}
 %\cvlistdoubleitem{Scientific Python}{Government Security Clearance}
 
 \section{Publications}
-\cventry{2015}{IEEE Oceans 2015}{Autonomous Acoustic-Aided Optical Localization for Data Transfer}{Johanna Hansen, Dehann Fourie, James C. Kinsey, Clifford Pontbriand, Jon Ware, Norm Farr, Carl L. Kaiser, and Maurice Tivey}{}{}
+\cventry{2015}{IEEE OCEANS}{Autonomous Acoustic-Aided Optical Localization for Data Transfer}{Johanna Hansen, Dehann Fourie, James C. Kinsey, Clifford Pontbriand, Jon Ware, Norm Farr, Carl L. Kaiser, and Maurice Tivey}{}{}
+
+\cventry{2015}{IEEE OCEANS}{”Wireless Data Harvesting Using the AUV Sentry and WHOI Optical Modem”}{Pontbriand, C.; Farr, N.; Fourie, D.; Hansen, J.; Kinsey, J.; Pelletier,
+L.P; Ware, J.}{}{}
+
 \cventry{2014}{Transportation Research Board 93rd Annual Meeting}
         {The Ultrasonic Culvert Inspection System (UCIS): 
         A Low-Cost Device for Conduit Inspection}
         {Johanna Hansen, Gregory Wilden, Ben Abbott, Ronald Green}{}{}{}
 
 \section{Presentations}
-\cventry{2015}{SciPy 2015}{Characterizing the Seafloor with Python as a Toolbox}{}{}{}
-\cventry{2015}{Big-data, Robotics, Autonomy, Technology and Sensing (BRATS) Talk}{Introduction to Machine Learning with Scikit-learn}{}{}{}
+\cventry{2015}{CapePy Python Meetup}{Tutorial: Introduction to Machine Learning with sklearn}{}{}{}
+\cventry{2015}{SciPy 2015}{Talk: Characterizing the Seafloor with Python as a Toolbox}{}{}{}
+\cventry{2015}{Big-data, Robotics, Autonomy, Technology and Sensing (BRATS)}{Talk: Standardizing Machine Learning Tasks with sklearn}{}{}{}
 
 %\section{Awards}
 %\cvline{May 2007-Dec 2011}{Terry Foundation Scholarship}
@@ -169,7 +174,8 @@ Engineering Management Courses and labs as an undergraduate}
 
 \section{Affiliations}
 \cvline{WHOI}{Founder and Technical Organizer of WHOI-Software Technical Group}
-\cvline{Python}{Member of Woods Hole Python Meetup}
+\cvline{Python}{CapePy Python Meetup Leader}
+\cventry{BRATS}{Big-data, Robotics, Autonomy, Technology and Sensing (BRATS) Member}{}{}{}{}
 \cvline{IEEE}{Signal Processing, Geoscience and Remote Sensing, Ocean Memberships}
 \cvline{CTO}{2013 South-Central CleanTech Open Incubator Judge, Austin TX}
 \cvline{Gardening}{WHOI Gardener, SwRI Gardening Club - Founding Member and Club Secretary}
