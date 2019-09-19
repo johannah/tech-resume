@@ -1,187 +1,212 @@
-%% start of file `template.tex'.
-%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
-%% Copyright 2010-2011 Mark Liu (markwayneliu@gmail.com).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
 %
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License version 1.3c,
-% available at http://www.latex-project.org/lppl/.
-
-\documentclass[11pt,a4paper,sans]{moderncv}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-
-\usepackage{verbatim}
-%\usepackage{casual}
-% moderncv themes
-%\moderncvstyle{casual}
-\moderncvstyle{casual}
-\moderncvcolor{blue}
-
-% character encoding
-\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
-
-% adjust the page margins
-\usepackage[scale=0.8]{geometry}
-\setlength{\hintscolumnwidth}{3.25cm}% if you want to change the width of the column with the dates
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
 %
-%% personal data
-\firstname{Johanna}
-\familyname{Hansen}
-\address{10 Bell Tower Lane}{Woods Hole, MA 02543}    % optional, remove the line if not wanted
-%\mobile{979.240.4446}                    % optional, remove the line if not wanted
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
 
-\extrainfo{jh1736 at gmail.com}                      % optional, remove the line if not wanted
-%\website{johannah.github.io}
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
-\newcommand*{\cvdegree}[7][.25em]{%
-\cvitem[#1]{\color{black}#2}{%
-{\scshape#3}%
-    \ifthenelse{\equal{#4}{}}{}{, {\itshape#4}}%
-    \ifthenelse{\equal{#5}{}}{}{, {\color{blue}#5}}%
-    \ifthenelse{\equal{#6}{}}{}{, {\sffamily#6}}%
-    .\strut%
-    \ifx&#7&%
-    \else{\newline{}\begin{minipage}[t]{\linewidth}\small% next line: customization
-                 \fontfamily{pzc}\selectfont% The percent signs are necessary!
-                                                        #7\end{minipage}}\fi}}
+\documentclass{resume} % Use the custom resume.cls style
 
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+\name{Johanna Hansen} % Your name
+%\address{Montreal, Quebec} % Your address
+\address{ johanna.hansen@mail.mcgill.ca \\ http://johannah.github.io } % Your phone number and email
 \begin{document}
-\maketitle
+	\vspace{-.5cm}
+\begin{rSection}{Education}
+{\bf McGill University, Montreal, QC} \hfill {\em 2016 -- 2021} \\ 
+\setlength{\parindent}{3ex}
+\indent{Ph.D. in Computer Science (expected), Mobile Robotics Lab} \\
+\indent{Thesis work on Model-Based Decision Making in Scientific Sampling Robots}\\
+%\indent{under the supervision of Dr. Gregory Dudek and Dr. Joelle Pineau}\\
+\noindent {\bf University of Texas at San Antonio, San Antonio, TX} \hfill {\em 2012 -- 2015} \\ 
+\indent {Graduate coursework (30 hours) in Electrical Engineering, Digital Signal Processing} \\
+\noindent {{\bf Texas State University, San Marcos, TX} \hfill {\em 2007 -- 2011}} \\
+\indent{B.S. in Electrical Engineering and B.S. in Environmnetal Geography} \\
+%\indent{Capstone Project on Identifying Devices in the Power Grid by their Current Signatures} \\
+	\vspace{-1cm}
+\end{rSection}
+\begin{rSection}{Technical Skills}{}{}{}
+\noindent{\textbf{Expertise:} Machine Learning, Reinforcement Learning, Robotic Path Planning, Sensors, Scientific Data Science, Signal Processing, Communication and Networking, Environmental Geography} \\
+\noindent{\textbf{Software}: Scientific Python (numpy, pytorch, scikit-learn, pandas), ROS, C/C++, Matlab} \\
+\noindent{\textbf{Hardware}: Sensors, Embedded Systems, Localization Systems, Marine Instrumentation} \\
+\noindent{\textbf{Data}: Images, Geospatial, Time Series, Scientific Sensors, Robot Navigation}
+%\item{\emph{Languages}: English (native), Spanish (basic), French (learning)}
+	\vspace{-.5cm}
+\end{rSection}
+\begin{rSection}{Experience}
+\begin{rSubsection}{NASA Jet Propulsion Lab (JPL)}{Summer 2019, current affiliate}{Research Intern and Remote Affiliate, Mobility and Robotics Section}{Pasadena, CA}
+\item{Worked on machine vision aspects of the Mars Sample Return Project. Implemented state-of-the-art geometric and direct object localization methods for finding sample tubes on the Martian terrain with care given to estimation uncertainty and computational performance. Developed a model which learns to contextually switch between different object localization methods.}
+\end{rSubsection}
+	\vspace{-.2cm}
+\begin{rSubsection}{McGill University}{Jan 2016--current}{Graduate Researcher, Mobile Robotics Lab}{Montreal, QC}
+\item{Research on model-based planning and reinforcement learning with generative models for mobile agents.}
+\item{Spearheaded collaboration with ecologists to develop automatic classification and spatial modeling of zooplankton in Canadian lakes. Led research and design of strategic marine sampling with custom low-cost floating sensors and autonomous surface vehicles.}
+%\item{Built system for portable underwater vehicle localization using low-cost USBL/GPS components} 
+%\item{Developed technique for calculating iceberg volume combining data images and sonar data collected from robotic platforms.}
+\end{rSubsection}
+	\vspace{-.2cm}
+\begin{rSubsection}{Woods Hole Oceanographic Institution (WHOI)}{Jan 2014 -- Sept 2015}{Autonomous Underwater Vehicle Engineer, National Deep Submergence Facility}{Woods Hole, MA}
+%\item{Software/Data/Electrical Engineer for deep-diving autonomous underwater vehicles (AUVs) working in research and ship-board operational environments. Primary at-sea data scientist robot data.}
+\item{Software/Data/Electrical Engineer for deep-diving autonomous underwater vehicles (AUVs) working in research and ship-board operational environments. Assisted in AUV deployments, hardware repair and maintenance, autonomous robot navigation, software development, networking and communications for robots and staff, acoustic and visual mapping of the seafloor, and scientific data analysis.}
+	%\item{Developed automated spatio-temporal processing pipeline for high-resolution multibeam, sidescan sonar, and optical maps.}
+%\item{Assisted in overhaul of navigation (GPS/USBL/LBL/DR) processing and visualization.}
+%\item{Developed user-interfaces (QT), vehicle control code (C++), data processing code (Python/Matlab), and device drivers primarily in Linux.}
+\end{rSubsection}
+	\vspace{-.2cm}
+\begin{rSubsection}{Southwest Research Institute (SwRI)}{Jan 2012 -- Dec 2013}{Engineer, Automation and Data Systems Division}{San Antonio, TX}{}
+%\item{Software/Electrical Applied Research Engineer for research, commercial, and government clients.}
+\item{Primary end-to-end software engineer building a mapping sensor consisting of acoustic transducers, DSP, camera, and embedded computer with remote control and interpretation. Developed sampling, filtering, visualization scheme and beamforming calibration routine for live acoustic data.}
+\end{rSubsection}
+\begin{rSubsection}{Lower Colorado River Authority (LCRA)}{Jan 2011 -- Dec 2011}{Engineering Coop, Telecommunications Department}{Austin, TX}
+\item{Configured SONET, fiber, ethernet, and microwave systems for critical communication infrastructure.} % including power generation/distribution, dam and irrigation control, and emergency response coordination. }
+%\item{Project lead for pilot irrigation control system using networked 900 MHz Radios.}
+\end{rSubsection}
+\end{rSection}
+	\vspace{-.5cm}
+% \begin{rSection}{Academic Papers}
+% \textbf{Hansen, J.}, Manjanna, S.,  Quattrini, L. A., Rekleitis, I., Dudek, G., \textit{Autonomous Marine Sampling Enhanced by Strategically Deployed Drifters in Marine Flow Fields}, MTS/IEEE OCEANS, 2018, \emph{{(Top 20 Student Submission)}}.
+% 
+% \textbf{Hansen, J.}, Dudek, G., \textit{Coverage Optimization with Non-Actuated, Floating Mobile Sensors using Iterative Trajectory Planning in Marine Flow Fields}, IEEE International Conference on Intelligent Robots (IROS), 2018.
+% 
+% \textbf{Hansen, J.}*, Kastner, K.*, Courville, A., Dudek, G.,  \textit{Planning in Dynamic Environments with Conditional Autoregressive Models}, International Conference on Machine Learning (ICML), workshop on Prediction and Generative Modeling in Reinforcement Learning, 2018.
+% 
+% Henderson P., Chang, W.D., Shkurti, F., \textbf{Hansen, J.}, Meger, D., Dudek G., 
+% \textit{Benchmark Environments for Multitask Learning in Continuous Domains}, International Conference on Machine Learning (ICML), workshop on Lifelong Learning, 2018, https://arxiv.org/abs/1708.04352. 
+% 
+% Manjanna, S., \textbf{ Hansen, J. }, Quattrini, L. A., Rekleitis, I., Dudek, G., 
+% \textit{Collaborative Sampling Using Heterogeneous Marine Robots Driven by Visual Cues}, Canadian Conference on Computer and Robot Vision (CRV), 2017. 
+%                 
+% Quattrini L. A., Rekleitis, I., Manjanna, S., Kakodkar, N., \textbf{Hansen, J.},   Dudek, G.,  Bobadilla, L.,  Anderson, J., and Smith, R.,
+%             \textit{Data Correlation and Comparison from Multiple Sensors over a Coral Reef with a Team of Heterogeneous Aquatic Robots},
+%              International Symposium on Experimental Robotics (ISER),
+%               2016.
+% 
+% \textbf{Hansen, J.}, Fourie, D., Kinsey, J., Pontbriand, C., Ware, J., Farr, N., Kaiser, C., and Tivey, M., \textit{Autonomous Acoustic-Aided Optical Localization for Data Transfer}, MTS/IEEE OCEANS, 2015.
+% 
+% Pontbriand, C., Farr, N., Fourie, D., \textbf{Hansen, J.},  Kinsey, J., Pelletier, J., and Ware, J., 
+%  \textit{Wireless Data Harvesting Using the AUV Sentry and WHOI Optical Modem}, MTS/IEEE OCEANS, 2015.
+% 
+% \textbf{Hansen, J.}, Wilden, G., Abbott, B., and Green, R., \textit{The Ultrasonic Culvert
+% Inspection System (UCIS): A Low-Cost Device for Conduit Inspection}, 2014 Transportation
+% Research Board 93rd Annual Meeting. 
+% \end{rSection}
+% \vspace{-.2cm}
+% \begin{rSection}{Professional Activities}
+% \begin{rSubsection}{Invited Presentations}{}{}{}
+% \item{2019: Tutorial on Model-Based Reinforcement Learning at AI4Good Workshop}
+% \item{2019: GRIL Presentation on Robotic Sampling in Aquatic Environments}	
+% \item{2018: PyLadies Montreal Meetup: Velo Vamos! ML on open bike data}
+% \item{2015: CapePy Python Meetup Tutorial: Introduction to Machine Learning with Scikit-learn }
+% \item{2015: BRATS Talk: Standardizing Machine Learning Tasks with Scikit-learn }
+% \end{rSubsection}
+% \vspace{-.2cm}
+% \begin{rSubsection}{Field Trials, Workshops, and Professional Development}{}{}{}
+% \item{2017-2019: Barbados Marine Field Trials}
+% \item{2017-2019 National Canadian Field Robotics Symposium and Field Trials}
+% \item{2017: MILA Deep Learning and Reinforcement Learning Summer School}
+% \item{2017: McGill Innovation's AI for Social Good Summer Lab}
+% \item{2016: IEEE Marine Robotics Summer School}
+% \item{2016: National Canadian Field Robotics Symposium and Field Trials}
+% \item{2012-13: SwRI Professional Courses in Proposal Writing, Promoting Research and Development, Technical Writing, \& Project Management}
+% \item{NAUI Master Scuba Diver, Diving for Science Certified}
+% \end{rSubsection}
+% %\begin{rSubsection}{Leadership and Volunteer Work}{}{}{}
+% %\item{2018: NIPS WiML Volunteer}
+% %\item{2017: ICML Volunteer}
+% %\item{2015: Scikit-learn developer sprint in Paris}
+% %\item{2015: Neural Information Processing Systems (NIPS), Volunteer}
+% %\item{2015: Founder and Technical Organizer of WHOI-Software Technical Group}
+% %\item{2015: CapePy Python Meetup Leader and Member}
+% %\item{2014: Big-data, Robotics, Autonomy, Technology and Sensing (BRATS) Member}
+% %\item{2013: South-Central CleanTech Open Incubator Judge, San Antonio and Austin TX}
+% %\end{rSubsection}
+% \vspace{-.2cm}
+% \begin{rSubsection}{Selected Awards}{}{}{}
+% \item{2019: NCRN Travel Grant}
+% \item{2017: WiML NIPS Travel Grant} 
+% \item{2016: McGill GREAT Travel Award} 
+% \item{2012: UTSA M.S. COE Valero Research Fellowship Offer}
+% \item{2013: Internal Research and Development Funding, Primary Investigator} 
+% \item{2007: Terry Foundation Scholarship (Complete Undergraduate Funding)} 
+% \item{2007: Dick Walrath Foundation Scholarship} 
+% \item{2007: American Quarter Horse Association Scholarship} 
+% \end{rSubsection}
+% \vspace{-.2cm}
+% \end{rSection}
+% \begin{rSection}{Teaching Experience}
+% \begin{rSubsection}{Texas State University}{Jan 2010--Dec 2010}{}{}
+% \item{Signals and Systems Teaching Assistant}
+% \item{Electronics Teaching Assistant}
+% \item{Microprocessors Lab Assistant}
+% \item{Engineering Management Teaching Assistant}
+% \end{rSubsection}
+% \end{rSection}
+% \vspace{-.2cm}
+% \begin{rSection}{Oceanographic Research Cruises}
+% \begin{rSubsection}{Studies of Evolution and Ecology of Petroleum Systems, Gulf of Mexico}{Jun 2015}{R/V Atlantis, Chief Scientist: Dr. David Valentine}{}
+% \item{Primary software/data processing engineer for Sentry AUV working with multibeam, sidescan, and sub-bottom pipeline data.}
+% \end{rSubsection}
+% \begin{rSubsection}{Mapping, Exploration, and Sampling at Havre Volcano, Southwestern Pacific}{Mar 2015}{R/V Revelle, Chief Scientist: Dr. Adam Soule}{}
+% \item{Primary software/data processing engineer for Sentry AUV in collaboration with Jason ROV. Developed sidescan and sub-bottom pipeline for processing sonar signal using MB-System.}
+% \end{rSubsection}
+% \begin{rSubsection}{Monitoring Recovery of Pacific Seamounts, Hawaiian Islands}{Oct 2014}{R/V Sikuliaq, Chief Scientists: Dr. Amy Baco-Taylor and Dr. Brendon Roark}{}
+% \item{Primary software/data engineer processing subsea navigation and images. Developed classifier for seafloor images for easier processing.}
+% \end{rSubsection}
+% \begin{rSubsection}{Juan de Fuca Ridge, Northeastern Pacific}{Jul 2014}{R/V Atlantis, Chief Scientists: Dr. James Kinsey and Dr. Maurice Tivey}{}
+% \item{Lead software engineer for AUV optical communication system integration. Developed acoustic/optical search algorithm for finding an optical modem on the seafloor. Also provided navigation/data processing and visualization for science.}
+% \end{rSubsection}
+% \begin{rSubsection}{Iron Eaters of the Loihi Seamount, Hawaiian Islands}{Jun 2014}{R/V Falkor, Chief Scientist: Dr. Brian Glazer}{}
+% \item{Primary software/data engineer working with subsea navigation, scientific sensors, and images. Developed thematic map of iron location in images for easy inspection and planning. }
+% \end{rSubsection}
+% \begin{rSubsection}{Deep Water Supercoral in Low pH Environments, Gulf of Mexico}{Apr 2014}{R/V Atlantis, Chief Scientist: Dr. Erik Cordes}{}
+% \item{Primary software/data engineer working with subsea navigation, scientific sensors, and images.}
+% \end{rSubsection}
+% %\begin{rSubsection}{AUV Engineering, Buzzards Bay}{Feb 2014}{R/V Tioga}{Dr. Carl Kaiser and Dr. Dana Yoerger}
+% %\item{Performed engineering testing of Sentry AUV mission executive and control system with several hardware components.}
+% %\end{rSubsection}
+% \begin{rSubsection}{Mineral Exploration, Southeastern Pacific}{Jan 2014}{R/V Ka`imikai-O-Kanoloa, Chief Scientist: Dr. Carl Kaiser}{}
+% \item{Learned AUV deployment, mission planning, data processing, and networking. Developed new initiative for robust data management.}
+% \end{rSubsection}
+% \end{rSection}
+
+
+%\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+%\end{tabular}
+%\end{rSection}
+
+
 %
-\section{Technical Qualifications Summary} 
-\cvline{}{Scientific Computing, 
-          Spatial-Temporal Signal Processing,
-          Autonomous Systems, 
-          Python, Matlab, C++/C, QT, MB-System, GIS, Linux/Windows
-       }
-%\section{Technical Skills} 
-%\cvline{}{Scientific Python, Matlab, C++/C, QT, MB-System, GIS, Linux/Windows} 
-
-\section{Education}
-\cvdegree{May 2012-May 2016}{University of Texas, San Antonio}{GPA: 3.81}{}{}{}
-\cventry{}{M.S., Electrical Engineering}{Digital Signal Processing}{}{}{}
-\cvline{}{\small Image Processing, Digital Filters, Graph Theory, 
-        Machine Learning, Remote Sensing, 
-        }
-\cvdegree{Aug 2007-Dec 2011}{Texas State University}{GPA: 3.61 - Cum Laude}{}{}{}
-\cventry{}{BS, Electrical Engineering}{Communications and Networking}{}{}{}
-\cvline{}{\small Data Compression and Error Coding, 
-        Wireless Systems,
-        Microprocessors}
-\cventry{}{ B.S., Geography}{Resource and Environmental Science}{}{}{}{}
-\cvline{}{\small GIS, 
-    Environmental Management, 
-    Physical Geography, 
-    Quantitative Data Analysis}
-
-\section{Experience}
-
-\cventry{Jan 2014-Present}{Engineer II}{Woods Hole Oceanographic Institution}{Woods Hole, MA}{}
-{
-Data/Software/Electrical Engineer for autonomous underwater robotic vehicles working in research and ship-board operational environments.
-    \begin{itemize}
-        \item Assist in all aspects of at-sea operations, including deployments, repair, and planning 
-        \item Primary data-scientist at sea for geophysical, acoustic, and photo data processing
-        %\item Primary data management and network architecture engineer
-      %  \item Overhauled both internal and external documentation procedures with version control and wiki access
-        \item Developed automated processing pipeline for multibeam, sidescan sonar, and optical data
-        \item Assisted in overhaul of navigation (GPS/USBL/LBL) processing and visualization 
-    \end{itemize}
-}
-
-\cventry{Jan 2012-Jan 2014}{Engineer}{Southwest Research Institute (SwRI)}{San Antonio, TX}
-{}{
-Software/Electrical Applied Research Engineer for commercial and government clients.  
-     \begin{itemize}
-        \item Primary end-to-end software engineer building a mapping sensor consisting of acoustic transducers, DSP, camera, and embedded computer with remote control and interpretation 
-        \item Developed sampling, filtering, visualization scheme for live acoustic data 
-        \item Won internal research funding as Primary Investigator to 
-            implement a low-cost, acoustic sensor capable for intelligent search 
-        \item Attained Government Security Clearance
-    \end{itemize}
-         }
-    \cventry{Jan 2011-Dec 2011}{Engineering Coop}
-            {Lower Colorado River Authority (LCRA)}{Austin, TX}{}
-            {Engineering Coop for the telecommunications department 
-            as full-time student.
- \begin{itemize}
-        \item Designed and configured SONET, optical fiber, Ethernet, and microwave systems
-            for critical communication infrastructure including power generation/distribution, dam and 
-            irrigation control, and emergency response coordination. 
-        \item Project lead for pilot irrigation control system using networked
-            900 MHz Radios. 
-        \item Assessed fiber installations using OTDR for future expansion planning.
-    \end{itemize}
-}
-
-\cventry{Jan 2010-Dec 2010}{Teaching/Lab Assistant}{Texas State University}{}{}
-{Assisted with Signals and Systems, Electronics, Microprocessors, and 
-Engineering Management Courses and labs as an undergraduate}
-
-
-\section{Professional Development}
-\cvline{Courses}{Technical Writing, Project Management, 
-        Proposal Writing, Promoting Research and Development}
-\cvline{Conferences}{2013 \& 2015 SciPy - Scikit-learn, Pandas, Cython, Geospatial, and Computational Statistics Tracks}
-
-%\section{Qualifications}
-%\cvlistdoubleitem{Scientific Python}{Government Security Clearance}
-
-\section{Publications}
-\cventry{2015}{IEEE OCEANS}{Autonomous Acoustic-Aided Optical Localization for Data Transfer}{Johanna Hansen, Dehann Fourie, James C. Kinsey, Clifford Pontbriand, Jon Ware, Norm Farr, Carl L. Kaiser, and Maurice Tivey}{}{}
-
-\cventry{2015}{IEEE OCEANS}{”Wireless Data Harvesting Using the AUV Sentry and WHOI Optical Modem”}{Pontbriand, C.; Farr, N.; Fourie, D.; Hansen, J.; Kinsey, J.; Pelletier,
-L.P; Ware, J.}{}{}
-
-\cventry{2014}{Transportation Research Board 93rd Annual Meeting}
-        {The Ultrasonic Culvert Inspection System (UCIS): 
-        A Low-Cost Device for Conduit Inspection}
-        {Johanna Hansen, Gregory Wilden, Ben Abbott, Ronald Green}{}{}{}
-
-\section{Presentations}
-\cventry{2015}{CapePy Python Meetup}{Tutorial: Introduction to Machine Learning with sklearn}{}{}{}
-\cventry{2015}{SciPy 2015}{Talk: Characterizing the Seafloor with Python as a Toolbox}{}{}{}
-\cventry{2015}{Big-data, Robotics, Autonomy, Technology and Sensing (BRATS)}{Talk: Standardizing Machine Learning Tasks with sklearn}{}{}{}
-
-%\section{Awards}
-%\cvline{May 2007-Dec 2011}{Terry Foundation Scholarship}
-
-%\section{Oceanographic Research Cruises}
-%\cvline{2014-fsm}{Utilized first research cruise to develop system understanding. 
-%        Began work on Reson Multibeam Driver. Initiated work to improve data 
-%        management practices. Successfully conducted pre/post dives.}
-%\cvline{2014-Cordes}{Worked as primary software team member for pre/post dive. 
-%        Deployed new Reson Driver for automated control of the multibeam sonar. 
-%        Implemented multi-threaded photo processing pipeline so that photos 
-%        could be produced within minutes rather than hours. Produced several 
-%        scripts to ease pre-dive tasks. Performed data management tasks and 
-%        interacted with science and documentary team.}
-%\cvline{2014-Glazer}{Worked as primary software team member in tandem with 
-%        electrical and mechanical teams to troubleshoot many hardware failures. 
-%        Worked closely with EL and Chief Scientist to provide valuable data 
-%        processing for science.}
-%\cvline{2014-Kinsey}{Served as Sentry software contact for Optical Communication
-%        System integration for two successful dives. Developed acoustic and 
-%        optical geolocation capability. 
-%        Troubleshot DVL, Avtrak, Optode installations and produced technical 
-%        reports. Provided training for new staff in pre/post dive process.}
-%\cvline{2014-Baco-Taylor}
-
-
-
-\section{Affiliations}
-\cvline{WHOI}{Founder and Technical Organizer of WHOI-Software Technical Group}
-\cvline{Python}{CapePy Python Meetup Leader}
-\cventry{BRATS}{Big-data, Robotics, Autonomy, Technology and Sensing (BRATS) Member}{}{}{}{}
-\cvline{IEEE}{Signal Processing, Geoscience and Remote Sensing, Ocean Memberships}
-\cvline{CTO}{2013 South-Central CleanTech Open Incubator Judge, Austin TX}
-\cvline{Gardening}{WHOI Gardener, SwRI Gardening Club - Founding Member and Club Secretary}
-\cvline{SCUBA}{NAUI Master Scuba Diver, Diving for Science Certified}
-
-\section{Interests}
-\cvline{}{Hiking, Backpacking, Traveling, Equestrian Sports, Paddleboarding }
+%%----------------------------------------------------------------------------------------
+%%	TECHNICAL STRENGTHS SECTION
+%%----------------------------------------------------------------------------------------
 %
+%%----------------------------------------------------------------------------------------
+%%	EXAMPLE SECTION
+%%----------------------------------------------------------------------------------------
+%
+%%\begin{rSection}{Section Name}
+%
+%%Section content\ldots
+%
+%%\end{rSection}
+%
+%%----------------------------------------------------------------------------------------
+
 \end{document}
